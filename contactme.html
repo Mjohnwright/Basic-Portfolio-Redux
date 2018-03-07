@@ -5,36 +5,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Portfolio</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <title>Contact Me</title>
     </head>
 
     <body>
         <header id="masterhead">
-            <a href="aboutme.html" id=logo> Matthew Wright</a>
+            <div class="container">
+                <a href="aboutme.html" id="logo"> Matthew Wright</a>
+                <nav>
+                    <a href="aboutme.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contactme.html">Contact Me</a>
+                </nav>
+            </div>
         </header>
-        <div class="container">
-            <nav>
-                <a href="aboutme.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contactme.html">Contact Me</a>
-            </nav>
-        </div>
 
+        <div id="main-container" class="container">
+            <section class="main-container">
+                <h1>Contact Me</h1>
 
-
-        <div class="maincontainer" class="container">
-            <section class="maincontainer">
-                <h1>Contact</h1>
-                <form id="contact=form">
+                <form id="contact-form">
                     <ul>
                         <li>
-                            <label for="name">Name</label>
+                            <label for="name">Name </label>
                             <input type="text" name="name" id="name" placeholder="John Smith" required="required">
                         </li>
 
                         <li>
-                            <label for="email">Email</label>
-                            <input type="text" email="email" id="email" placeholder="name@gmail.com" require="required">
+                            <label for="email">Email </label>
+                            <input type="text" name="email" id="email" placeholder="johnsmith@email.com" required="required">
                         </li>
 
                         <li>
@@ -42,34 +45,25 @@
                             <textarea id="message" name="message" required="required"></textarea>
                         </li>
                     </ul>
-
                     <input type="submit" name="submit">
-
                 </form>
-
             </section>
 
-            <section class="sidebar">
-                <div id="connectwithme">
-                    <h1>Connect With Me</h1>
-                    <img src="Assets/images/linkedin.png" class="social" alt="LinkeIn">
-                    <img src="Assets/images/git.png" class="social" alt="Git Hub">
-                    <img src="Assets/images/stackoverflow.png" class="social" alt="Stack Overflow">
+                <section class="sidebar">
+                    <div id="connect">
+                        <h2>Connect With Me</h2>
+                        <img src="Assets/images/linkedin.png" class="social" alt="LinkeIn">
+                        <img src="Assets/images/git.png" class="social" alt="Git Hub">
+                        <img src="Assets/images/stackoverflow.png" class="social" alt="Stack Overflow">
+                    </div>
+                </section>
+        </div>
 
-
-            </section>
+        <footer>
+            <div class "container">
+                &copy; Copyright 2018 Matthew Wright
             </div>
-
-
-            <footer>
-                <div class "container">
-                    &copy; Copyright 2018 Matthew Wright
-                </div>
-            </footer>
-
-
-
-
+        </footer>
     </body>
 
 </html>
